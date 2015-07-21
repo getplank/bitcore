@@ -75,6 +75,7 @@ describe('Networks', function() {
     it('should have constant '+key+' for livenet and testnet', function(){
       networks.testnet.hasOwnProperty(key).should.equal(true);
       networks.livenet.hasOwnProperty(key).should.equal(true);
+      networks.regtest.hasOwnProperty(key).should.equal(true);
     });
   });
 
